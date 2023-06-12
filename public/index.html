@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="<%= BASE_URL %>css/reset1.css">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <!-- 用来解决外链gitee仓库图片，在img标签中无法显示的问题。猜测可能是：referrer策略是一种网络安全手段，获取图片时，出现限制 -->
+  <meta name="referrer" content="no-referrer">
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
